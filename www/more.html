@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#ffb95f","on-error-container":"#93000a","on-primary-container":"#a3faef","on-secondary-fixed":"#00201c","surface":"#f9f9ff","secondary-container":"#6df5e1","primary-container":"#0f766e","on-background":"#111c2d","on-primary-fixed":"#00201d","on-secondary-container":"#006f64","on-primary-fixed-variant":"#00504a","surface-dim":"#d0daf2","primary-fixed":"#9cf2e8","on-surface":"#111c2d","tertiary-fixed":"#ffddb8","on-surface-variant":"#3e4947","tertiary-container":"#945d00","inverse-surface":"#273143","error-container":"#ffdad6","on-error":"#ffffff","secondary":"#006b5f","on-primary":"#ffffff","surface-container-high":"#dfe8ff","primary-fixed-dim":"#80d5cb","surface-container-low":"#f0f3ff","on-secondary":"#ffffff","on-tertiary":"#ffffff","on-tertiary-container":"#ffe6cc","surface-bright":"#f9f9ff","on-tertiary-fixed-variant":"#653e00","secondary-fixed":"#71f8e4","surface-tint":"#006a63","surface-container-lowest":"#ffffff","primary":"#005c55","on-tertiary-fixed":"#2a1700","surface-container-highest":"#d9e3fb","secondary-fixed-dim":"#4fdbc8","surface-container":"#e8eeff","tertiary":"#734700","surface-variant":"#d9e3fb","on-secondary-fixed-variant":"#005048","background":"#f9f9ff","inverse-primary":"#80d5cb","outline-variant":"#bdc9c6","inverse-on-surface":"#ecf0ff","error":"#ba1a1a","outline":"#6e7977"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.25rem","gutter":"1rem","margin":"1rem","space-sm":"0.5rem","space-xl":"1.5rem","space-xs":"0.25rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"title-lg":["Inter"],"display-metric":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"title-md":["Inter"],"label-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}],"display-metric":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-primary-container text-on-primary pt-safe shadow-[0_4px_16px_-4px_rgba(15,118,110,0.25)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #0f766e
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhnNf9NOCduSzo-CD0cmihoXLgLcLhUcNrT6roD65inruJzV8oASJdzbTQkWPjCinGbmi-JA_y6Ll1_EpfLxPwBOuJ7qo9NnZVAePTFWiaWTF4z5e8jZy-HKokxL6cw-TLiGt4tQRfJRT-TKYVHhFAbdlQMc7AhLgdybC4VEitNu2T96PyABen1pCCuNzRNoMQRZqG-NF7r3wsxhmsGN2NovCRziyirQlecozJbIMaZnrQ38T9I0YGnPRZ"/><div class="flex flex-col"><span class="font-label-sm text-label-sm tracking-wider uppercase text-on-primary-container leading-none">Paanam Lending</span><h1 class="font-title-lg text-title-lg text-on-primary leading-tight line-clamp-1">Search Loans</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-white/10 active:scale-95 transition-all text-on-primary" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-on-primary-container/30"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full px-margin space-y-space-lg pb-10">
+<!-- TOP CONTEXTUAL BAR -->
+<div class="flex items-center justify-between pt-space-sm">
+<button aria-label="Go Back" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-low text-primary active:scale-95 transition-transform" onclick="window.history.back()">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Account</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Partner Profile</h2>
+</div>
+<button aria-label="More Options" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[24px]">more_vert</span>
+</button>
+</div>
+<!-- 1. USER PROFILE CARD -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-36 h-36 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md">
+<!-- 72px Circular Avatar with Ring -->
+<div class="relative shrink-0">
+<div class="w-[72px] h-[72px] rounded-full p-[3px] bg-gradient-to-tr from-primary to-secondary-fixed">
+<div class="w-full h-full rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-lg text-headline-lg shadow-inner">
+            AK
+          </div>
+</div>
+<div class="absolute bottom-0 right-0 w-5 h-5 rounded-full bg-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-[14px] font-bold">verified</span>
+</div>
+</div>
+<!-- Identity Details -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Arun Kumar</h3>
+<button aria-label="Edit Profile" class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm active:bg-secondary-container transition-colors" onclick="navigator.clipboard?.writeText('PA102504'); alert('Partner ID Copied!');">
+<span>ID: PA102504</span>
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+</button>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+91 98••••••42</span>
+</div>
+<div class="mt-2.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            Profile Verified
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. DIGITAL VISITING CARD EXPANDABLE SECTION -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full flex items-center justify-between p-space-md text-left active:bg-surface-container-low transition-colors" id="toggleVisitingCardBtn" onclick="document.getElementById('visitingCardContent').classList.toggle('hidden'); document.getElementById('visitingChevron').classList.toggle('rotate-180');">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Digital Visiting Card</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tap to preview &amp; share credentials</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] transition-transform duration-200" id="visitingChevron">expand_more</span>
+</button>
+<!-- Expandable Content -->
+<div class="hidden px-space-md pb-space-md pt-space-xs" id="visitingCardContent">
+<div class="bg-gradient-to-br from-primary-container via-primary to-primary text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<!-- Background accents -->
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-secondary-container/10 blur-xl"></div>
+<div class="absolute top-2 right-4 opacity-15">
+<span class="material-symbols-outlined text-[80px]">account_balance</span>
+</div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md tracking-tight font-bold text-on-primary">Paanam</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm text-label-sm font-bold">PARTNER</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container">ID: PA102504</span>
+</div>
+<div class="mb-4">
+<h4 class="font-headline-md text-headline-md font-bold text-on-primary">Arun Kumar</h4>
+<p class="font-label-sm text-label-sm text-on-primary-container mt-0.5">Authorized Loan Distribution Partner</p>
+</div>
+<div class="flex items-end justify-between pt-2">
+<div class="space-y-1 font-body-sm text-body-sm text-on-primary-container">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>+91 98••••••42</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>arun.kumar@paanam.in</span>
+</div>
+</div>
+<!-- Mini QR Placeholder -->
+<div class="w-14 h-14 bg-surface-container-lowest rounded-lg p-1 flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-primary text-[42px]">qr_code_2</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm">
+<button class="h-12 rounded-xl bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 active:scale-98 transition-transform" onclick="alert('Digital Card link ready to share!');">
+<span class="material-symbols-outlined text-[18px]">share</span>
+          Share Card
+        </button>
+<button class="h-12 rounded-xl bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 active:scale-98 transition-transform" onclick="alert('Downloading high-res PNG...');">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Download PNG
+        </button>
+</div>
+</div>
+</div>
+<!-- 3. MY PAANAM RM SECTION -->
+<div class="space-y-2">
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">My Paanam RM</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your dedicated Relationship Manager for underwriting &amp; file queries.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-primary font-bold flex items-center justify-center text-lg">
+            DB
+          </div>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary-fixed ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h4 class="font-title-md text-title-md text-on-surface truncate">Dhavuth Babu</h4>
+<span class="px-2 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Online</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Sr. RM • South Region</p>
+</div>
+</div>
+<!-- Call & Mail buttons (48px hit target) -->
+<div class="flex items-center gap-2 shrink-0">
+<a aria-label="Call RM" class="w-11 h-11 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center active:scale-90 transition-transform shadow-sm" href="tel:+917400000074">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+<a aria-label="Email RM" class="w-11 h-11 rounded-full bg-surface-container-high text-primary flex items-center justify-center active:scale-90 transition-transform shadow-sm" href="mailto:rm.dhavuth@paanam.in">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4. CATEGORIZED SETTINGS GROUPS -->
+<!-- GROUP 1: MY BUSINESS -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold px-1">My Business</span>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="home.html">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">My Dashboard</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</a>
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">My Team</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">4 Active</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</a>
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">help_center</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">My Queries</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">1 Pending</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</a>
+</div>
+</div>
+<!-- GROUP 2: ACCOUNT & COMPLIANCE -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold px-1">Account &amp; Compliance</span>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Contract Agreement</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">✓ Signed</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</a>
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Payout Account</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">HDFC ••4821</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</a>
+</div>
+</div>
+<!-- GROUP 3: SECURITY & PRIVACY -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold px-1">Security &amp; Legal</span>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Privacy &amp; App Security</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</a>
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Policies &amp; Partner Terms</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- GROUP 4: SUPPORT & PREFERENCES -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold px-1">Support &amp; Language</span>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Grievance Redressal</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</a>
+<a class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Help &amp; Knowledge Base</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</a>
+<button class="w-full h-14 flex items-center justify-between px-space-md hover:bg-surface-container-low transition-colors text-left" onclick="document.getElementById('languageModal').classList.remove('hidden');">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">translate</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">App Language</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span id="currentLangText">English</span>
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</button>
+</div>
+</div>
+<!-- 5. LOGOUT SECTION & APP VERSION -->
+<div class="pt-2 flex flex-col items-center space-y-4">
+<button class="w-full h-12 rounded-xl bg-error-container text-on-error-container font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-98 transition-transform" onclick="document.getElementById('logoutModal').classList.remove('hidden');">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+      Log Out of Paanam
+    </button>
+<div class="text-center font-body-sm text-body-sm text-on-surface-variant">
+<p class="font-semibold text-primary">Paanam Partner v2.4.1 (Build 820)</p>
+<p class="text-[11px] mt-0.5">Designed with pride for Indian DSA Lending Partners</p>
+</div>
+</div>
+<!-- ================= MODALS & PROTOTYPE OVERLAYS ================= -->
+<!-- LANGUAGE SELECTION BOTTOM SHEET -->
+<div class="hidden fixed inset-0 z-50 flex flex-col justify-end bg-inverse-surface/40 backdrop-blur-sm" id="languageModal">
+<div class="bg-surface-container-lowest rounded-t-2xl p-space-lg w-full max-w-md mx-auto shadow-2xl space-y-space-md">
+<div class="w-10 h-1 rounded-full bg-outline-variant mx-auto mb-2"></div>
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Select App Language</h3>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="document.getElementById('languageModal').classList.add('hidden');">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-2 max-h-60 overflow-y-auto">
+<button class="w-full h-12 px-4 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-between" onclick="setLanguage('English');">
+<span>English (Default)</span>
+<span class="material-symbols-outlined text-[20px]">check</span>
+</button>
+<button class="w-full h-12 px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-between" onclick="setLanguage('தமிழ் (Tamil)');">
+<span>தமிழ் (Tamil)</span>
+</button>
+<button class="w-full h-12 px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-between" onclick="setLanguage('हिन्दी (Hindi)');">
+<span>हिन्दी (Hindi)</span>
+</button>
+<button class="w-full h-12 px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-between" onclick="setLanguage('తెలుగు (Telugu)');">
+<span>తెలుగు (Telugu)</span>
+</button>
+<button class="w-full h-12 px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-between" onclick="setLanguage('ಕನ್ನಡ (Kannada)');">
+<span>ಕನ್ನಡ (Kannada)</span>
+</button>
+<button class="w-full h-12 px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-between" onclick="setLanguage('മലയാളം (Malayalam)');">
+<span>മലയാളം (Malayalam)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- LOGOUT CONFIRMATION MODAL -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center px-margin bg-inverse-surface/40 backdrop-blur-sm" id="logoutModal">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg w-full max-w-sm shadow-2xl text-center space-y-space-md">
+<div class="w-14 h-14 rounded-full bg-error-container text-error flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[30px]">logout</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Confirm Log Out</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Are you sure you want to end your active session on this device?</p>
+</div>
+<div class="flex gap-space-sm pt-2">
+<button class="flex-1 h-12 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg" onclick="document.getElementById('logoutModal').classList.add('hidden');">
+          Cancel
+        </button>
+<button class="flex-1 h-12 rounded-xl bg-error text-on-error font-label-lg text-label-lg shadow-md" onclick="alert('Session ended securely.'); location.reload();">
+          Log Out
+        </button>
+</div>
+</div>
+</div>
+<!-- LOAN PRODUCT SELECTION OVERLAY (Connected to central FAB) -->
+<div class="hidden fixed inset-0 z-50 flex flex-col justify-end bg-inverse-surface/40 backdrop-blur-sm" id="fabLoanOverlay">
+<div class="bg-surface-container-lowest rounded-t-2xl p-space-lg w-full max-w-md mx-auto shadow-2xl space-y-space-md">
+<div class="w-10 h-1 rounded-full bg-outline-variant mx-auto mb-2"></div>
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Initiate Application</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select lending instrument category</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="document.getElementById('fabLoanOverlay').classList.add('hidden');">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Secured Loans -->
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant mb-1.5 block">Secured Lending</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="p-3 rounded-xl bg-surface-container-low text-left hover:bg-secondary-container transition-colors" onclick="alert('Starting Home Loan Flow');">
+<span class="material-symbols-outlined text-primary text-[24px]">home</span>
+<span class="block font-title-md text-title-md text-on-surface mt-1">Home Loan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Up to ₹5 Cr</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-low text-left hover:bg-secondary-container transition-colors" onclick="alert('Starting Loan Against Property Flow');">
+<span class="material-symbols-outlined text-primary text-[24px]">apartment</span>
+<span class="block font-title-md text-title-md text-on-surface mt-1">LAP</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Commercial / Resi</span>
+</button>
+</div>
+</div>
+<!-- Unsecured Loans -->
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant mb-1.5 block">Unsecured Lending</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="p-3 rounded-xl bg-surface-container-low text-left hover:bg-secondary-container transition-colors" onclick="alert('Starting Personal Loan Flow');">
+<span class="material-symbols-outlined text-primary text-[24px]">person</span>
+<span class="block font-title-md text-title-md text-on-surface mt-1">Personal Loan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Instant in 2 hrs</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-low text-left hover:bg-secondary-container transition-colors" onclick="alert('Starting Business Loan Flow');">
+<span class="material-symbols-outlined text-primary text-[24px]">storefront</span>
+<span class="block font-title-md text-title-md text-on-surface mt-1">Business Loan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Working Capital</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic Tab State Sync: Highlight 'More' tab in bottom nav
+  (function initMoreTabHighlight() {
+    const moreTab = document.querySelector('nav a[data-path="more-menu"]');
+    if (moreTab) {
+      document.querySelectorAll('nav a').forEach(el => {
+        el.classList.remove('text-primary', 'font-bold');
+        el.classList.add('text-on-surface-variant');
+      });
+      moreTab.classList.add('text-primary', 'font-bold');
+      moreTab.classList.remove('text-on-surface-variant');
+      const icon = moreTab.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    }
+
+    // Attach listener to Central FAB
+    const centralFab = document.querySelector('button[aria-label="New Loan Application"]');
+    if (centralFab) {
+      centralFab.onclick = function() {
+        const overlay = document.getElementById('fabLoanOverlay');
+        if (overlay) overlay.classList.remove('hidden');
+      };
+    }
+  })();
+
+  function setLanguage(lang) {
+    const target = document.getElementById('currentLangText');
+    if (target) {
+      target.textContent = lang.split(' ')[0];
+    }
+    const modal = document.getElementById('languageModal');
+    if (modal) {
+      modal.classList.add('hidden');
+    }
+  }
+</script></main><div class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none"><div class="relative w-full"><div class="absolute -top-7 left-1/2 -translate-x-1/2 pointer-events-auto z-10"><button aria-label="New Loan Application" class="w-14 h-14 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center shadow-[0_12px_28px_-6px_rgba(245,158,11,0.45)] hover:brightness-105 active:scale-95 transition-transform duration-150" type="button"><span class="material-symbols-outlined text-[30px] font-bold text-on-tertiary-fixed">add</span></button></div><nav class="pointer-events-auto w-full bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-between h-16 px-space-xs max-w-md mx-auto"><a class="flex-1 flex flex-col items-center justify-center h-full text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="home.html"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center h-full text-on-surface-variant hover:text-primary transition-colors" data-path="lenders" href="lender.html"><span class="material-symbols-outlined text-[24px]">account_balance</span><span class="font-label-sm text-label-sm mt-0.5">Lender</span></a><div class="w-14 flex-shrink-0"></div><a class="flex-1 flex flex-col items-center justify-center h-full text-on-surface-variant hover:text-primary transition-colors" data-path="search-loans" href="search.html"><span class="material-symbols-outlined text-[24px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex-1 flex flex-col items-center justify-center h-full text-on-surface-variant hover:text-primary transition-colors" data-path="more-menu" href="more.html"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-sm text-label-sm mt-0.5">More</span></a></div></nav></div></div></body></html>

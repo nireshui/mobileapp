@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#ffb95f","on-error-container":"#93000a","on-primary-container":"#a3faef","on-secondary-fixed":"#00201c","surface":"#f9f9ff","secondary-container":"#6df5e1","primary-container":"#0f766e","on-background":"#111c2d","on-primary-fixed":"#00201d","on-secondary-container":"#006f64","on-primary-fixed-variant":"#00504a","surface-dim":"#d0daf2","primary-fixed":"#9cf2e8","on-surface":"#111c2d","tertiary-fixed":"#ffddb8","on-surface-variant":"#3e4947","tertiary-container":"#945d00","inverse-surface":"#273143","error-container":"#ffdad6","on-error":"#ffffff","secondary":"#006b5f","on-primary":"#ffffff","surface-container-high":"#dfe8ff","primary-fixed-dim":"#80d5cb","surface-container-low":"#f0f3ff","on-secondary":"#ffffff","on-tertiary":"#ffffff","on-tertiary-container":"#ffe6cc","surface-bright":"#f9f9ff","on-tertiary-fixed-variant":"#653e00","secondary-fixed":"#71f8e4","surface-tint":"#006a63","surface-container-lowest":"#ffffff","primary":"#005c55","on-tertiary-fixed":"#2a1700","surface-container-highest":"#d9e3fb","secondary-fixed-dim":"#4fdbc8","surface-container":"#e8eeff","tertiary":"#734700","surface-variant":"#d9e3fb","on-secondary-fixed-variant":"#005048","background":"#f9f9ff","inverse-primary":"#80d5cb","outline-variant":"#bdc9c6","inverse-on-surface":"#ecf0ff","error":"#ba1a1a","outline":"#6e7977"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.25rem","gutter":"1rem","margin":"1rem","space-sm":"0.5rem","space-xl":"1.5rem","space-xs":"0.25rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"title-lg":["Inter"],"display-metric":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"title-md":["Inter"],"label-md":["Inter"]},"fontSize":{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}],"display-metric":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-primary-container text-on-primary pt-safe shadow-[0_4px_16px_-4px_rgba(15,118,110,0.25)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #0f766e
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhnNf9NOCduSzo-CD0cmihoXLgLcLhUcNrT6roD65inruJzV8oASJdzbTQkWPjCinGbmi-JA_y6Ll1_EpfLxPwBOuJ7qo9NnZVAePTFWiaWTF4z5e8jZy-HKokxL6cw-TLiGt4tQRfJRT-TKYVHhFAbdlQMc7AhLgdybC4VEitNu2T96PyABen1pCCuNzRNoMQRZqG-NF7r3wsxhmsGN2NovCRziyirQlecozJbIMaZnrQ38T9I0YGnPRZ"/><div class="flex flex-col"><span class="font-label-sm text-label-sm tracking-wider uppercase text-on-primary-container leading-none">Paanam Lending</span><h1 class="font-title-lg text-title-lg text-on-primary leading-tight line-clamp-1">Search Loans</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-white/10 active:scale-95 transition-all text-on-primary" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-on-primary-container/30"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Toast Notification (Top dynamic floating) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 transform -translate-y-12 opacity-0 pointer-events-none w-[90%] max-w-sm" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">LAF102845 copied to clipboard!</span>
+</div>
+</div>
+<!-- Primary Search Card Area -->
+<div class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-sm">
+<!-- State Switcher segmented chips for demo inspection -->
+<div class="flex items-center justify-between bg-surface-container-high p-1 rounded-xl">
+<button class="flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-primary shadow-sm font-bold" id="tabResults" onclick="switchViewState('results')" type="button">
+        Results (4)
+      </button>
+<button class="flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-on-surface" id="tabRecent" onclick="switchViewState('recent')" type="button">
+        Recent &amp; Empty
+      </button>
+<button class="flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md text-center transition-all text-on-surface-variant hover:text-on-surface" id="tabNoResults" onclick="switchViewState('noresults')" type="button">
+        No Results
+      </button>
+</div>
+<!-- Search Input Component -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-sm flex flex-col gap-space-sm">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-primary text-[22px] absolute left-3 pointer-events-none">search</span>
+<input class="w-full bg-surface-container-low pl-10 pr-9 py-3 rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" id="searchInput" placeholder="Applicant name, LAF ID or mobile number" type="text" value="Rajesh Kumar"/>
+<button aria-label="Clear search" class="absolute right-2.5 p-1 rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-container transition-all" id="clearInputBtn" onclick="clearSearchInput()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Scope Filter Chips Horizontal Scroll -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="chip-filter px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary whitespace-nowrap active:scale-95 transition-all shadow-sm" onclick="setChip(this)" type="button">
+          ✓ All
+        </button>
+<button class="chip-filter px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap active:scale-95 transition-all" onclick="setChip(this)" type="button">
+          Applicant
+        </button>
+<button class="chip-filter px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap active:scale-95 transition-all" onclick="setChip(this)" type="button">
+          Entity
+        </button>
+<button class="chip-filter px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap active:scale-95 transition-all" onclick="setChip(this)" type="button">
+          LAF ID
+        </button>
+<button class="chip-filter px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap active:scale-95 transition-all" onclick="setChip(this)" type="button">
+          Mobile
+        </button>
+</div>
+<!-- Search Trigger Action -->
+<button class="w-full h-12 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" onclick="triggerSearch()" type="button">
+<span class="material-symbols-outlined text-[20px]">manage_search</span>
+<span>Search Files</span>
+</button>
+</div>
+</div>
+<!-- VIEW 1: RESULTS ACTIVE STATE -->
+<div class="flex flex-col w-full" id="viewResults">
+<!-- Meta Summary & Quick Filter Controls -->
+<div class="px-margin py-space-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Search Results (4)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Query: <strong class="text-primary font-semibold">"Rajesh Kumar"</strong> • Scope: All</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-9 px-3 bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm flex items-center gap-1 active:scale-95 shadow-sm transition-all" onclick="toggleFilterDrawer(true)" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Filters</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</button>
+</div>
+</div>
+<!-- Loan Cards Stream -->
+<div class="px-margin pt-space-sm flex flex-col gap-space-sm">
+<!-- CARD 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<!-- Card Header -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Rajesh Kumar</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px]">Individual</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">storefront</span>
+<span class="font-body-sm text-body-sm">RK Traders</span>
+</div>
+</div>
+<!-- Status Chip: In Progress -->
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            In Progress
+          </span>
+</div>
+<!-- Meta Grid -->
+<div class="bg-surface-container-low rounded-xl p-space-sm grid grid-cols-2 gap-y-2 gap-x-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">LAF Identifier</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono font-bold">LAF102845</span>
+<button aria-label="Copy LAF" class="text-primary hover:text-primary-container p-0.5" onclick="copyText('LAF102845')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Mobile Contact</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono">+91 98••••••42</span>
+<button aria-label="Call Mobile" class="text-secondary hover:text-primary-container p-0.5" onclick="showToast('Calling applicant...')" type="button">
+<span class="material-symbols-outlined text-[14px]">call</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Product Category</span>
+<span class="font-body-sm text-body-sm text-on-surface">Business Loan (Secured)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Selected Lender</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Prime Capital • 48h TAT</span>
+</div>
+</div>
+<!-- Value Highlight & CTA Group -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant">Loan Amount</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹25.00 Lakh</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-10 px-4 bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" onclick="showToast('Opening File LAF102845')" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Priya Enterprises</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px]">Entity</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="font-body-sm text-body-sm">Priya Sharma (Proprietor)</span>
+</div>
+</div>
+<!-- Status Chip: Approved -->
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+            Approved
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm grid grid-cols-2 gap-y-2 gap-x-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">LAF Identifier</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono font-bold">LAF102781</span>
+<button class="text-primary hover:text-primary-container p-0.5" onclick="copyText('LAF102781')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Mobile Contact</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono">+91 97••••••19</span>
+<button class="text-secondary p-0.5" onclick="showToast('Calling applicant...')" type="button">
+<span class="material-symbols-outlined text-[14px]">call</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Product Category</span>
+<span class="font-body-sm text-body-sm text-on-surface">Working Capital</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Selected Lender</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Unity Lending</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant">Loan Amount</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹18.00 Lakh</span>
+</div>
+<button class="h-10 px-4 bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" onclick="showToast('Opening File LAF102781')" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CARD 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Arun Kumar</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px]">Individual</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+<span class="font-body-sm text-body-sm">Salaried Professional</span>
+</div>
+</div>
+<!-- Status Chip: Disbursed -->
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+            Disbursed
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm grid grid-cols-2 gap-y-2 gap-x-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">LAF Identifier</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono font-bold">LAF102654</span>
+<button class="text-primary hover:text-primary-container p-0.5" onclick="copyText('LAF102654')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Mobile Contact</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono">+91 94••••••88</span>
+<button class="text-secondary p-0.5" onclick="showToast('Calling applicant...')" type="button">
+<span class="material-symbols-outlined text-[14px]">call</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Product Category</span>
+<span class="font-body-sm text-body-sm text-on-surface">Personal Loan (Instant)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Selected Lender</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Nova Credit</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant">Loan Amount</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹8.00 Lakh</span>
+</div>
+<button class="h-10 px-4 bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" onclick="showToast('Opening File LAF102654')" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- CARD 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Meena Traders</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px]">Partnership</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="font-body-sm text-body-sm">Meena Sundaram</span>
+</div>
+</div>
+<!-- Status Chip: Pending Verification -->
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+            Pending
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm grid grid-cols-2 gap-y-2 gap-x-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">LAF Identifier</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono font-bold">LAF102501</span>
+<button class="text-primary hover:text-primary-container p-0.5" onclick="copyText('LAF102501')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Mobile Contact</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-mono">+91 99••••••30</span>
+<button class="text-secondary p-0.5" onclick="showToast('Calling applicant...')" type="button">
+<span class="material-symbols-outlined text-[14px]">call</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Product Category</span>
+<span class="font-body-sm text-body-sm text-on-surface">Loan Against Prop. (LAP)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Selected Lender</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Apex Finance</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant">Loan Amount</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">₹45.00 Lakh</span>
+</div>
+<button class="h-10 px-4 bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-all" onclick="showToast('Opening File LAF102501')" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 2: RECENT SEARCHES & GUIDED EMPTY STATE -->
+<div class="hidden flex-col w-full px-margin py-space-sm" id="viewRecent">
+<!-- Recent searches container -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-primary">history</span>
+<span class="font-title-md text-title-md">Recent Searches</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline" onclick="clearAllRecent()" type="button">
+          Clear All
+        </button>
+</div>
+<div class="flex flex-col gap-space-xs" id="recentList">
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-space-sm cursor-pointer" onclick="fillAndSearch('Rajesh Kumar')">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary">schedule</span>
+<span class="font-body-md text-body-md text-on-surface">Rajesh Kumar</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Applicant</span>
+</div>
+<button class="text-on-surface-variant hover:text-error p-1" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-space-sm cursor-pointer" onclick="fillAndSearch('LAF102845')">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary">schedule</span>
+<span class="font-body-md text-body-md text-on-surface">LAF102845</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">ID</span>
+</div>
+<button class="text-on-surface-variant hover:text-error p-1" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-space-sm cursor-pointer" onclick="fillAndSearch('9840291842')">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary">schedule</span>
+<span class="font-body-md text-body-md text-on-surface">98XXXXXX42</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Mobile</span>
+</div>
+<button class="text-on-surface-variant hover:text-error p-1" onclick="this.parentElement.remove()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Friendly Instruction Card -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg flex flex-col items-center text-center gap-space-sm shadow-sm">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface">Find Any Active File</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+        Search instantly across thousands of loan applications using Applicant Name, Entity Name, LAF ID, or Customer Mobile Number.
+      </p>
+<div class="flex flex-wrap gap-2 justify-center mt-2">
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-3 py-1.5 rounded-full text-on-surface shadow-xs">💡 Pro-tip: Try "LAF102"</span>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-3 py-1.5 rounded-full text-on-surface shadow-xs">⚡ Fast TAT lookup</span>
+</div>
+</div>
+</div>
+<!-- VIEW 3: NO RESULTS STATE -->
+<div class="hidden flex-col w-full px-margin py-space-xl" id="viewNoResults">
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl flex flex-col items-center text-center gap-space-md shadow-sm">
+<div class="w-20 h-20 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[40px]">search_off</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-title-lg text-title-lg text-on-surface">No Loan Files Found</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+          We couldn't find any file matching your criteria. Check for spelling mistakes or try a broader search.
+        </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md w-full text-left flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Helpful Suggestions:</span>
+<ul class="font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-1.5 pl-1">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+            Double-check the 6-digit LAF ID number
+          </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+            Try searching by the primary 10-digit mobile number
+          </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+            Ensure your filter scope is set to "All"
+          </li>
+</ul>
+</div>
+<button class="w-full h-12 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md active:scale-98 transition-all" onclick="clearAndReset()" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>Clear Search &amp; Try Again</span>
+</button>
+</div>
+</div>
+<!-- FILTER MODAL / BOTTOM SHEET (Drawer) -->
+<div class="fixed inset-0 z-50 transition-opacity duration-300 opacity-0 pointer-events-none" id="filterDrawer">
+<!-- Backdrop scrim -->
+<div class="absolute inset-0 bg-on-background/40 backdrop-blur-xs" onclick="toggleFilterDrawer(false)"></div>
+<!-- Sheet Box -->
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-lowest rounded-t-[28px] p-space-md flex flex-col max-h-[85vh] overflow-y-auto transform translate-y-full transition-transform duration-300 shadow-2xl">
+<!-- Drag handle -->
+<div class="w-10 h-1 rounded-full bg-outline-variant mx-auto mb-space-sm"></div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">tune</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Filter Loan Files</h3>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-full active:bg-surface-container" onclick="toggleFilterDrawer(false)" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Filter Section 1: Application Status -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Application Status</label>
+<div class="flex flex-wrap gap-2">
+<button class="filter-tag px-3 py-2 rounded-xl font-label-sm text-label-sm bg-primary text-on-primary" type="button">All (4)</button>
+<button class="filter-tag px-3 py-2 rounded-xl font-label-sm text-label-sm bg-surface-container text-on-surface-variant" type="button">In Progress (1)</button>
+<button class="filter-tag px-3 py-2 rounded-xl font-label-sm text-label-sm bg-surface-container text-on-surface-variant" type="button">Approved (1)</button>
+<button class="filter-tag px-3 py-2 rounded-xl font-label-sm text-label-sm bg-surface-container text-on-surface-variant" type="button">Disbursed (1)</button>
+<button class="filter-tag px-3 py-2 rounded-xl font-label-sm text-label-sm bg-surface-container text-on-surface-variant" type="button">Pending (1)</button>
+</div>
+</div>
+<!-- Filter Section 2: Loan Category -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Loan Product</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>Business Loan</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>Working Capital</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>Personal Loan</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>LAP / Mortgage</span>
+</label>
+</div>
+</div>
+<!-- Filter Section 3: Amount Range -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Amount Range (₹)</label>
+<div class="flex items-center justify-between text-on-surface font-title-md text-title-md">
+<span>₹5 Lakh</span>
+<span class="text-primary font-bold">₹50 Lakh</span>
+</div>
+<input class="w-full accent-primary h-2 bg-surface-container rounded-lg cursor-pointer" max="100" min="1" type="range" value="50"/>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 h-12 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg active:scale-95 transition-all" onclick="toggleFilterDrawer(false)" type="button">
+          Reset
+        </button>
+<button class="flex-2 w-2/3 h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1 shadow-md active:scale-95 transition-all" onclick="applyFilters()" type="button">
+<span>Apply Filters</span>
+<span class="material-symbols-outlined text-[20px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- LOAN APPLICATION FAB MODAL (Bottom Sheet) -->
+<div class="fixed inset-0 z-50 transition-opacity duration-300 opacity-0 pointer-events-none" id="newLoanModal">
+<div class="absolute inset-0 bg-on-background/40 backdrop-blur-xs" onclick="toggleNewLoanModal(false)"></div>
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-lowest rounded-t-[28px] p-space-md flex flex-col transform translate-y-full transition-transform duration-300 shadow-2xl">
+<div class="w-10 h-1 rounded-full bg-outline-variant mx-auto mb-space-sm"></div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-on-surface">New Loan Application</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Choose borrower product profile</span>
+</div>
+</div>
+<button class="p-2 text-on-surface-variant rounded-full active:bg-surface-container" onclick="toggleNewLoanModal(false)" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Secured Group -->
+<span class="font-label-sm text-label-sm font-bold text-primary tracking-wider uppercase mb-space-xs">Secured Products</span>
+<div class="grid grid-cols-2 gap-space-xs mb-space-md">
+<button class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-left flex flex-col gap-1 transition-all active:scale-98" onclick="handleNewAppSelect('LAP')" type="button">
+<span class="material-symbols-outlined text-primary text-[24px]">real_estate_agent</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">LAP &amp; Property</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Up to ₹10 Cr</span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-left flex flex-col gap-1 transition-all active:scale-98" onclick="handleNewAppSelect('Home Loan')" type="button">
+<span class="material-symbols-outlined text-primary text-[24px]">home</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Home Loan</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Low interest rates</span>
+</button>
+</div>
+<!-- Unsecured Group -->
+<span class="font-label-sm text-label-sm font-bold text-tertiary tracking-wider uppercase mb-space-xs">Unsecured Products</span>
+<div class="grid grid-cols-2 gap-space-xs mb-space-lg">
+<button class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-left flex flex-col gap-1 transition-all active:scale-98" onclick="handleNewAppSelect('Business Loan')" type="button">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">store</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Business Loan</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Quick approval</span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-left flex flex-col gap-1 transition-all active:scale-98" onclick="handleNewAppSelect('Personal Loan')" type="button">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">person</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Personal Instant</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Same-day payout</span>
+</button>
+</div>
+<button class="w-full h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md" onclick="toggleNewLoanModal(false)" type="button">
+        Cancel
+      </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+  // Dynamic view tabs switching
+  function switchViewState(state) {
+    const vResults = document.getElementById('viewResults');
+    const vRecent = document.getElementById('viewRecent');
+    const vNoResults = document.getElementById('viewNoResults');
+    
+    const tResults = document.getElementById('tabResults');
+    const tRecent = document.getElementById('tabRecent');
+    const tNoResults = document.getElementById('tabNoResults');
+
+    [vResults, vRecent, vNoResults].forEach(v => v.classList.add('hidden'));
+    [tResults, tRecent, tNoResults].forEach(t => {
+      t.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+      t.classList.add('text-on-surface-variant');
+    });
+
+    if (state === 'results') {
+      vResults.classList.remove('hidden');
+      tResults.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+      tResults.classList.remove('text-on-surface-variant');
+    } else if (state === 'recent') {
+      vRecent.classList.remove('hidden');
+      tRecent.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+      tRecent.classList.remove('text-on-surface-variant');
+    } else if (state === 'noresults') {
+      vNoResults.classList.remove('hidden');
+      tNoResults.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+      tNoResults.classList.remove('text-on-surface-variant');
+    }
+  }
+
+  // Toast notifier
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.innerText = msg;
+    toast.classList.remove('opacity-0', '-translate-y-12', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', '-translate-y-12', 'pointer-events-none');
+    }, 2400);
+  }
+
+  // Clipboard simulator
+  function copyText(val) {
+    showToast(val + ' copied to clipboard!');
+  }
+
+  // Clear query button
+  function clearSearchInput() {
+    const input = document.getElementById('searchInput');
+    input.value = '';
+    input.focus();
+    switchViewState('recent');
+  }
+
+  // Chip active toggle
+  function setChip(target) {
+    const allChips = document.querySelectorAll('.chip-filter');
+    allChips.forEach(c => {
+      c.className = 'chip-filter px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant whitespace-nowrap active:scale-95 transition-all';
+      c.innerText = c.innerText.replace('✓ ', '');
+    });
+    target.className = 'chip-filter px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary whitespace-nowrap active:scale-95 transition-all shadow-sm';
+    target.innerText = '✓ ' + target.innerText;
+  }
+
+  // Query fill and search
+  function fillAndSearch(str) {
+    const input = document.getElementById('searchInput');
+    input.value = str;
+    switchViewState('results');
+    showToast('Loaded records for: ' + str);
+  }
+
+  function triggerSearch() {
+    const val = document.getElementById('searchInput').value.trim();
+    if (!val) {
+      switchViewState('recent');
+    } else if (val.toLowerCase().includes('xyz') || val.toLowerCase().includes('unknown')) {
+      switchViewState('noresults');
+    } else {
+      switchViewState('results');
+      showToast('Found 4 active files');
+    }
+  }
+
+  function clearAndReset() {
+    document.getElementById('searchInput').value = '';
+    switchViewState('recent');
+  }
+
+  function clearAllRecent() {
+    document.getElementById('recentList').innerHTML = '<div class="py-4 text-center text-on-surface-variant font-body-sm">No recent search history</div>';
+    showToast('Recent searches cleared');
+  }
+
+  // Filter drawer toggle
+  function toggleFilterDrawer(open) {
+    const drawer = document.getElementById('filterDrawer');
+    const content = drawer.querySelector('div.bg-surface-container-lowest');
+    if (open) {
+      drawer.classList.remove('opacity-0', 'pointer-events-none');
+      drawer.classList.add('opacity-100');
+      content.classList.remove('translate-y-full');
+      content.classList.add('translate-y-0');
+    } else {
+      drawer.classList.add('opacity-0', 'pointer-events-none');
+      drawer.classList.remove('opacity-100');
+      content.classList.add('translate-y-full');
+      content.classList.remove('translate-y-0');
+    }
+  }
+
+  function applyFilters() {
+    toggleFilterDrawer(false);
+    showToast('Filters applied successfully');
+  }
+
+  // New Loan Modal handling for the shell central FAB
+  function toggleNewLoanModal(open) {
+    const modal = document.getElementById('newLoanModal');
+    const content = modal.querySelector('div.bg-surface-container-lowest');
+    if (open) {
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+      content.classList.remove('translate-y-full');
+      content.classList.add('translate-y-0');
+    } else {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('opacity-100');
+      content.classList.add('translate-y-full');
+      content.classList.remove('translate-y-0');
+    }
+  }
+
+  function handleNewAppSelect(category) {
+    toggleNewLoanModal(false);
+    showToast('Initiating new file for ' + category);
+  }
+
+  // Attach listener to shell amber + button
+  document.addEventListener('DOMContentLoaded', () => {
+    const shellFab = document.querySelector('button[aria-label="New Loan Application"]');
+    if (shellFab) {
+      shellFab.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleNewLoanModal(true);
+      });
+    }
+  });
+</script></main><div class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none"><div class="relative w-full"><div class="absolute -top-7 left-1/2 -translate-x-1/2 pointer-events-auto z-10"><button aria-label="New Loan Application" class="w-14 h-14 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center shadow-[0_12px_28px_-6px_rgba(245,158,11,0.45)] hover:brightness-105 active:scale-95 transition-transform duration-150" type="button"><span class="material-symbols-outlined text-[30px] font-bold text-on-tertiary-fixed">add</span></button></div><nav class="pointer-events-auto w-full bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-between h-16 px-space-xs max-w-md mx-auto"><a class="flex-1 flex flex-col items-center justify-center h-full text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="home.html"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center h-full text-on-surface-variant hover:text-primary transition-colors" data-path="lenders" href="lender.html"><span class="material-symbols-outlined text-[24px]">account_balance</span><span class="font-label-sm text-label-sm mt-0.5">Lender</span></a><div class="w-14 flex-shrink-0"></div><a aria-current="page" class="flex-1 flex flex-col items-center justify-center h-full transition-colors text-primary font-bold" data-path="search-loans" href="search.html"><span class="material-symbols-outlined text-[24px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex-1 flex flex-col items-center justify-center h-full text-on-surface-variant hover:text-primary transition-colors" data-path="more-menu" href="more.html"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-sm text-label-sm mt-0.5">More</span></a></div></nav></div></div></body></html>

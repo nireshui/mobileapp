@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#2a1700", "on-error": "#ffffff", "on-tertiary": "#ffffff", "surface": "#f9f9ff", "on-secondary-container": "#006f64", "tertiary": "#734700", "error-container": "#ffdad6", "surface-dim": "#d0daf2", "on-tertiary-fixed-variant": "#653e00", "secondary-container": "#6df5e1", "error": "#ba1a1a", "primary": "#005c55", "surface-container": "#e8eeff", "surface-container-high": "#dfe8ff", "surface-container-lowest": "#ffffff", "on-surface": "#111c2d", "tertiary-fixed-dim": "#ffb95f", "on-secondary-fixed": "#00201c", "on-primary-fixed": "#00201d", "outline": "#6e7977", "background": "#f9f9ff", "inverse-on-surface": "#ecf0ff", "on-primary-fixed-variant": "#00504a", "on-surface-variant": "#3e4947", "on-secondary": "#ffffff", "on-background": "#111c2d", "tertiary-container": "#945d00", "surface-container-highest": "#d9e3fb", "surface-tint": "#006a63", "outline-variant": "#bdc9c6", "on-tertiary-container": "#ffe6cc", "surface-container-low": "#f0f3ff", "secondary-fixed": "#71f8e4", "secondary": "#006b5f", "tertiary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#005048", "primary-container": "#0f766e", "primary-fixed-dim": "#80d5cb", "surface-variant": "#d9e3fb", "on-error-container": "#93000a", "secondary-fixed-dim": "#4fdbc8", "on-primary-container": "#a3faef", "surface-bright": "#f9f9ff", "on-primary": "#ffffff", "inverse-surface": "#273143", "primary-fixed": "#9cf2e8", "inverse-primary": "#80d5cb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.25rem", "margin": "1rem", "space-xl": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem" }, fontFamily: { "display-metric": ["Inter"], "title-md": ["Inter"], "headline-lg": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "title-lg": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"] }, fontSize: { "display-metric": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "22px", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "500" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "title-lg": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-primary-container rounded-b-2xl shadow-[0_4px_16px_-4px_rgba(15,23,42,0.12)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Paanam Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XLq4LtJUCm9_ERjrncXrx5m33SNvgGLpuv_6k_aK-6PrzxqG4u3tnmI760CUk4N72LX-mNEb8wcTfV8sWw6Esro6AOzci13psRUlOBAhAWet_2TviHdKD6aCEYlMY8eUMYKyYsB4bN5IaUHhgkhlPnAs8rp4wzpz759vXwoZpCKTxTSISQNA44QoZf74ghqqle_WwHBaX7hSBvgxFnW89J-a1my9uHOjaMy_oLIMXRYzNrGt-iABth8fry"/><div class="flex flex-col"><span class="font-title-lg text-title-lg font-bold text-on-primary tracking-tight leading-none">Paanam</span><span class="font-label-sm text-label-sm text-on-primary-container leading-none opacity-90">Home</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-primary hover:bg-on-primary/10 transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-2.5 h-2.5 bg-tertiary-fixed-dim rounded-full shadow-[0_0_6px_rgba(255,185,95,0.8)]"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-full shadow-lg flex items-center gap-space-xs text-body-sm opacity-0 pointer-events-none transition-all duration-300 transform -translate-y-2" id="quickToast">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span id="toastMessage">Action completed successfully</span>
+</div>
+<div class="px-margin flex flex-col gap-space-lg w-full max-w-md mx-auto">
+<!-- 1. SYNC / STATUS BAR -->
+<div class="flex items-center justify-between pt-space-sm pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Welcome back, Arun</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors text-label-sm font-label-sm bg-surface-container-low px-2 py-1 rounded-full shadow-sm" onclick="refreshDashboard()">
+<span class="material-symbols-outlined text-[14px] text-outline" id="refreshIcon">sync</span>
+<span id="syncText">Updated 03 Oct, 01:49 PM</span>
+</button>
+</div>
+<!-- 2. PROMOTIONAL BANNER CAROUSEL -->
+<div class="relative w-full overflow-hidden rounded-2xl bg-gradient-to-br from-primary-container via-primary to-on-primary-fixed-variant shadow-md text-on-primary">
+<!-- Ambient Geometry Background -->
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-on-primary-container/10 blur-xl pointer-events-none"></div>
+<div class="absolute -left-8 -bottom-8 w-36 h-36 rounded-full bg-tertiary-fixed-dim/15 blur-lg pointer-events-none"></div>
+<svg class="absolute inset-0 w-full h-full opacity-10 pointer-events-none" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="16" id="dotPattern" patternunits="userSpaceOnUse" width="16">
+<circle cx="2" cy="2" fill="#ffffff" r="1.5"></circle>
+</pattern>
+</defs>
+<rect fill="url(#dotPattern)" height="100%" width="100%"></rect>
+</svg>
+<div class="relative p-space-md flex flex-col justify-between min-h-[178px]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1 pr-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm text-label-sm tracking-wide uppercase font-bold self-start shadow-sm">
+              Exclusive Partner Offer
+            </span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-primary mt-1">Loan Against Property</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">Interest rates starting from 10.49%*</p>
+</div>
+<!-- Stylized Bank/Badge Icon -->
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest/15 backdrop-blur-md flex items-center justify-center text-on-primary shadow-inner flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">real_estate_agent</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<div class="flex items-center gap-1.5 bg-on-primary/10 px-2.5 py-1 rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-primary font-medium">Up to ₹5 Cr • Instant In-Principle</span>
+</div>
+<button class="inline-flex items-center gap-1 bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold px-3 py-1.5 rounded-full shadow-md active:scale-95 transition-transform" onclick="triggerToast('LAP special commission tier opened')">
+<span>View Offer</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<!-- Carousel navigation mini controls -->
+<div class="flex items-center justify-between mt-2 pt-1 border-t border-on-primary/10">
+<div class="flex items-center gap-1">
+<span class="w-4 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary/40"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary/40"></span>
+</div>
+<div class="flex items-center gap-1 text-on-primary/70">
+<button aria-label="Previous Offer" class="p-1 hover:text-on-primary transition-colors" onclick="triggerToast('Switched to Home Loan Booster')">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button aria-label="Next Offer" class="p-1 hover:text-on-primary transition-colors" onclick="triggerToast('Switched to Business OD line')">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. QUICK ACTION CARDS (2-column grid) -->
+<div class="grid grid-cols-2 gap-3 w-full">
+<!-- Card 1 -->
+<button class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md active:scale-[0.98] transition-all text-left group" onclick="triggerToast('Preparing One-Pager summary export...')">
+<div class="flex items-center justify-between w-full">
+<div class="w-11 h-11 rounded-xl bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">description</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors text-[20px]">chevron_right</span>
+</div>
+<div class="mt-3">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium block">Generate</span>
+<span class="font-title-md text-title-md font-bold text-on-surface leading-tight">One Pager</span>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-primary font-medium">CAM Ready</span>
+</div>
+</button>
+<!-- Card 2 -->
+<button class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md active:scale-[0.98] transition-all text-left group" onclick="triggerToast('Fetching instant CRIF / CIBIL portal...')">
+<div class="flex items-center justify-between w-full">
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed text-tertiary-container flex items-center justify-center group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-tertiary transition-colors text-[20px]">chevron_right</span>
+</div>
+<div class="mt-3">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium block">Check</span>
+<span class="font-title-md text-title-md font-bold text-on-surface leading-tight">Credit Score</span>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed/60 px-1.5 py-0.5 rounded font-semibold">Instant Bureau</span>
+</div>
+</button>
+</div>
+<!-- 4. PAANAM LOAN MATCH ENGINE CARD -->
+<div class="w-full rounded-2xl bg-gradient-to-r from-primary to-primary-container p-space-md text-on-primary shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary-container/10 rounded-full blur-lg pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/20 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold tracking-wider uppercase text-on-primary">Paanam Match Engine</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container bg-on-primary/10 px-2 py-0.5 rounded-full">AI Automated</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-primary mt-1">Need an instant loan offer?</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Matched across 7 top lending partners</p>
+<!-- Flow visual container -->
+<div class="my-3 py-2 px-3 rounded-xl bg-surface-container-lowest/10 backdrop-blur-sm flex items-center justify-between text-label-sm font-label-sm text-on-primary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">person</span> Lead</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">arrow_forward</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">psychology</span> Engine</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">arrow_forward</span>
+<span class="flex items-center gap-1 font-bold text-secondary-fixed"><span class="material-symbols-outlined text-[15px]">account_balance</span> 7 Banks</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex -space-x-1.5 overflow-hidden">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-xs">H</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-tertiary-container flex items-center justify-center font-label-sm text-label-sm font-bold shadow-xs">I</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-xs">A</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold shadow-xs">+4</div>
+</div>
+<button class="inline-flex items-center gap-1.5 bg-tertiary-fixed-dim text-on-tertiary-fixed hover:bg-tertiary-fixed font-label-md text-label-md font-bold px-3.5 py-2 rounded-xl shadow-md active:scale-95 transition-all" onclick="openProductSheet()">
+<span>Request Offers</span>
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</button>
+</div>
+</div>
+<!-- 5. LOAN PIPELINE SUMMARY -->
+<div class="flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Loan Pipeline</h3>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-0.5" onclick="triggerToast('Filtering full pipeline (12 cases)...')">
+<span>View All (12)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Active Applications</span>
+<div class="font-display-metric text-display-metric text-on-surface leading-tight">12</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Disbursal Ratio</span>
+<div class="font-title-md text-title-md text-primary font-bold">71.4%</div>
+</div>
+</div>
+<!-- Segmented Mini Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container flex overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim" style="width: 33%" title="Pending"></div>
+<div class="h-full bg-secondary-fixed" style="width: 25%" title="Logged In"></div>
+<div class="h-full bg-primary" style="width: 42%" title="Disbursed"></div>
+</div>
+<!-- 3 Pipeline Column Status Cards -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<!-- Pending -->
+<button class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors text-center" onclick="triggerToast('Filtered: 4 Pending Sanctions')">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">4</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold">Pending</span>
+</button>
+<!-- Logged In -->
+<button class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors text-center" onclick="triggerToast('Filtered: 3 Bank Logged-In Files')">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[16px]">file_upload</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Logged In</span>
+</button>
+<!-- Disbursed -->
+<button class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors text-center" onclick="triggerToast('Filtered: 5 Successfully Disbursed Files')">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">5</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Disbursed</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 6. MY EARNINGS (Financial Dashboard Grid) -->
+<div class="flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">My Earnings</h3>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2.5 py-1 rounded-full shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">FY 26–27</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 w-full">
+<!-- Metric 1: Awaited PDDs -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-2xl shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary-fixed-dim"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium block">Expected Payout</span>
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface mt-0.5">₹3.94 Cr</div>
+</div>
+<div class="mt-3 flex items-center gap-1 text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">pending_actions</span>
+<span>Awaited PDDs</span>
+</div>
+</div>
+<!-- Metric 2: Ready for Invoice -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-2xl shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium block">Calculated Payout</span>
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface mt-0.5">₹0.00 Cr</div>
+</div>
+<div class="mt-3 flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+<span>Ready for Inv.</span>
+</div>
+</div>
+<!-- Metric 3: Awaited Payment -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-2xl shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium block">Confirmed Invoice</span>
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface mt-0.5">₹0.01 Cr</div>
+</div>
+<div class="mt-3 flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Awaited Pmt</span>
+</div>
+</div>
+<!-- Metric 4: Payment Received -->
+<div class="relative bg-surface-container-lowest p-space-md rounded-2xl shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium block">Ledger FY 26–27</span>
+<div class="font-headline-md text-headline-md font-extrabold text-primary mt-0.5">₹0.08 Cr</div>
+</div>
+<div class="mt-3 flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Paid in Bank</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 7. EARNINGS ACTION BUTTONS -->
+<div class="grid grid-cols-2 gap-3 w-full">
+<button class="min-h-[48px] rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center gap-2.5 px-3 py-2 font-label-md text-label-md font-semibold text-on-surface hover:bg-surface-container-low active:scale-[0.98] transition-all" onclick="triggerToast('Opening DSA Slab &amp; Payout Structure')">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</div>
+<span>Payout Plan</span>
+</button>
+<button class="min-h-[48px] rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center gap-2.5 px-3 py-2 font-label-md text-label-md font-semibold text-on-surface hover:bg-surface-container-low active:scale-[0.98] transition-all" onclick="triggerToast('Opening Partner Commission Ledger')">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+</div>
+<span>Full Ledger</span>
+</button>
+</div>
+<!-- 8. MY BUSINESS (Leads & Partner Management) -->
+<div class="flex flex-col gap-space-sm w-full">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">My Business</h3>
+<div class="grid grid-cols-2 gap-3 w-full">
+<!-- My Sourced Leads -->
+<button class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md text-left active:scale-[0.98] transition-all" onclick="triggerToast('Navigating to 28 Active Sourced Leads')">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">arrow_forward</span>
+</div>
+<div class="mt-3">
+<span class="font-title-md text-title-md font-bold text-on-surface">Sourced Leads</span>
+<div class="mt-1 inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+              28 Active
+            </div>
+</div>
+</button>
+<!-- Custom QR -->
+<button class="flex flex-col justify-between p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md text-left active:scale-[0.98] transition-all" onclick="triggerToast('Displaying Partner Referral QR Code')">
+<div class="flex items-center justify-between">
+<div class="w-9 h-9 rounded-xl bg-tertiary-fixed text-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">share</span>
+</div>
+<div class="mt-3">
+<span class="font-title-md text-title-md font-bold text-on-surface">Custom QR</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Share with clients</p>
+</div>
+</button>
+</div>
+<!-- Sourced Partners Full-Width Card -->
+<button class="w-full p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md text-left flex items-center justify-between active:scale-[0.99] transition-all" onclick="triggerToast('Managing Sub-DSA Distribution Network')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Sourced Partners</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">6 Sub-DSAs connected &amp; active</p>
+</div>
+</div>
+<div class="flex items-center text-primary font-label-md text-label-md font-semibold">
+<span>Manage</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</button>
+</div>
+<!-- Quick Partner Support Badge -->
+<div class="w-full bg-surface-container-low rounded-xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">support_agent</span>
+<span class="font-label-md text-label-md text-on-surface">Dedicated Paanam RM: <strong>Vikram Joshi</strong></span>
+</div>
+<button class="p-1.5 rounded-full bg-surface-container-lowest text-primary shadow-xs" onclick="triggerToast('Dialing RM Helpline: +91 98200 12345')">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</button>
+</div>
+</div>
+<!-- 9. INTERACTIVE PROTOTYPE MODAL: Loan Product Selection Overlay -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-xs flex flex-col justify-end opacity-0 pointer-events-none transition-opacity duration-300" id="productModal">
+<div class="w-full max-w-md mx-auto bg-surface-container-lowest rounded-t-3xl shadow-2xl p-space-lg flex flex-col gap-space-md max-h-[85vh] overflow-y-auto transform translate-y-full transition-transform duration-300" id="productModalContent">
+<!-- Handle -->
+<div class="w-10 h-1 bg-outline-variant rounded-full mx-auto self-center"></div>
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Select Loan Product</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Choose customer profile for instant matching</p>
+</div>
+<button aria-label="Close Loan Product Selection" class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container" onclick="closeProductSheet()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- SECURED SECTION -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Secured Products</span>
+<div class="grid grid-cols-1 gap-2">
+<button class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-primary-fixed transition-all text-left" onclick="startApplication('Secured Loan &amp; LAP')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">real_estate_agent</span>
+<div>
+<div class="font-title-md text-title-md font-semibold text-on-surface">Secured Loan &amp; LAP</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">LTV up to 75% • Up to ₹15 Cr</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">add_circle</span>
+</button>
+<button class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-primary-fixed transition-all text-left" onclick="startApplication('Home Loan')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">home</span>
+<div>
+<div class="font-title-md text-title-md font-semibold text-on-surface">Home Loan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Rate from 8.50% • 30 Yr Tenure</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">add_circle</span>
+</button>
+<button class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-primary-fixed transition-all text-left" onclick="startApplication('Working Capital')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">store</span>
+<div>
+<div class="font-title-md text-title-md font-semibold text-on-surface">Working Capital &amp; CC/OD</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Property backed revolving limits</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">add_circle</span>
+</button>
+</div>
+</div>
+<!-- UNSECURED SECTION -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Unsecured Products</span>
+<div class="grid grid-cols-1 gap-2">
+<button class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-tertiary-fixed transition-all text-left" onclick="startApplication('Business Loan')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[22px]">corporate_fare</span>
+<div>
+<div class="font-title-md text-title-md font-semibold text-on-surface">Unsecured Business Loan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">No collateral • Disbursal in 24 Hrs</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">add_circle</span>
+</button>
+<button class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-tertiary-fixed transition-all text-left" onclick="startApplication('Personal Loan')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[22px]">person_check</span>
+<div>
+<div class="font-title-md text-title-md font-semibold text-on-surface">Personal Loan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Salaried &amp; Professional • Quick e-KYC</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">add_circle</span>
+</button>
+<button class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-tertiary-fixed transition-all text-left" onclick="startApplication('Doctor / CA Professional Loan')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-container text-[22px]">medical_services</span>
+<div>
+<div class="font-title-md text-title-md font-semibold text-on-surface">Professional Loan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Doctors, CAs &amp; Architects</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function triggerToast(text) {
+      const toast = document.getElementById('quickToast');
+      const msg = document.getElementById('toastMessage');
+      if (!toast || !msg) return;
+      msg.textContent = text;
+      toast.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(window.__toastTimeout);
+      window.__toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none', '-translate-y-2');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2500);
+    }
+
+    function refreshDashboard() {
+      const icon = document.getElementById('refreshIcon');
+      const syncText = document.getElementById('syncText');
+      if (icon) icon.classList.add('animate-spin');
+      triggerToast('Syncing loan statuses with Bank APIs...');
+      setTimeout(() => {
+        if (icon) icon.classList.remove('animate-spin');
+        if (syncText) {
+          const now = new Date();
+          const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          syncText.textContent = 'Updated Today, ' + timeStr;
+        }
+        triggerToast('Pipeline & Earnings refreshed!');
+      }, 900);
+    }
+
+    function openProductSheet() {
+      const modal = document.getElementById('productModal');
+      const content = document.getElementById('productModalContent');
+      if (!modal || !content) return;
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      content.classList.remove('translate-y-full');
+    }
+
+    function closeProductSheet() {
+      const modal = document.getElementById('productModal');
+      const content = document.getElementById('productModalContent');
+      if (!modal || !content) return;
+      content.classList.add('translate-y-full');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    function startApplication(productName) {
+      closeProductSheet();
+      triggerToast('Starting new lead: ' + productName);
+    }
+
+    // Attach to App Shell quick add button if present
+    document.addEventListener('DOMContentLoaded', () => {
+      const shellAddBtn = document.querySelector('a[data-path="new-lead"]');
+      if (shellAddBtn) {
+        shellAddBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openProductSheet();
+        });
+      }
+    });
+  </script>
+</div></main><div class="fixed bottom-0 w-full z-50 pointer-events-none"><div class="relative max-w-md mx-auto w-full"><div class="absolute left-1/2 -translate-x-1/2 -top-7 pointer-events-auto z-20"><a aria-label="Quick Action Add Application" class="w-16 h-16 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center shadow-[0_12px_28px_-6px_rgba(148,93,0,0.4)] active:scale-95 transition-transform hover:opacity-95" data-path="new-lead" href="products.html"><span class="material-symbols-outlined text-[32px] font-bold">add</span></a></div><nav class="pointer-events-auto pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 transition-colors text-primary-container font-semibold" data-path="home" href="home.html"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="lenders" href="lender.html"><span class="material-symbols-outlined text-[24px]">account_balance</span><span class="font-label-sm text-label-sm mt-0.5">Lender</span></a><div class="flex-1 flex flex-col items-center justify-end pb-1.5 h-full select-none"><span class="font-label-sm text-label-sm text-on-surface-variant opacity-75">Apply</span></div><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="pipeline-search" href="search.html"><span class="material-symbols-outlined text-[24px]">manage_search</span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="more-menu" href="more.html"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-sm text-label-sm mt-0.5">More</span></a></div></nav></div></div></body></html>

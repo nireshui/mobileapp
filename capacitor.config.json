@@ -1,0 +1,6 @@
+{
+  "appId": "in.paanam.partner",
+  "appName": "Paanam",
+  "webDir": "www",
+  "android": { "allowMixedContent": false }
+}
